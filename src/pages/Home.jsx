@@ -1,7 +1,46 @@
+import hero1 from '../assets/hero1.webp'
+import hero2 from '../assets/hero2.webp'
+import hero3 from '../assets/hero3.webp'
+import hero4 from '../assets/hero4.webp'
+import { Link } from "react-router-dom";
+
 function Home() {
   return (
-    <div>
-      <h1>hello</h1>
+    <div className="container w-3/4 mx-auto mt-10">
+      <div className="flex items-center justify-between">
+        <div className="w-[496px] flex flex-col gap-10 mt-10">
+          <h1 className="text-6xl font-bold text-[#394E6A]">We are changing the way people shop</h1>
+          <p className="text-[#394E6A]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore repellat explicabo enim soluta temporibus asperiores aut obcaecati perferendis porro nobis.</p>
+          <Link to='/products' className='w-[148px] btn btn-info text-gray-300'>OUR PRODUCTS</Link>
+        </div>
+
+        <div className="carousel carousel-center max-w-md p-4 w-[496px] h-[450px] space-x-4 bg-neutral rounded-box mt-10">
+          <div className="carousel-item">
+            <img
+              src={hero1}
+              className="rounded-box w-[320px] h-[416px]"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src={hero2}
+              className="rounded-box w-[320px] h-[416px]"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src={hero3}
+              className="rounded-box w-[320px] h-[416px]"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src={hero4}
+              className="rounded-box w-[320px] h-[416px]"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
