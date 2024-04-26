@@ -46,21 +46,16 @@ function Home() {
 
         {/* featured */}
 
-        <div>
-          
+        <div className='mt-24 mb-20'>
+          <h2 className='font-bold text-3xl text-[#394E6A] mb-7'>Featured Products</h2>
+          <hr />
+
+          <div className='flex justify-between gap-5'>
+            <Card></Card>
+            <Card></Card>
+            <Card></Card>
+          </div>
         </div>
-      </div>
-
-      <div className='container w-3/4 mx-auto mt-20 mb-20'>
-        <h2 className='font-bold text-3xl text-[#394E6A] mb-7'>Featured Products</h2>
-        <hr />
-
-        <div className='flex justify-between gap-5'>
-          <Card></Card>
-          <Card></Card>
-          <Card></Card>
-        </div>
-
       </div>
     </>
   );
